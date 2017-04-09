@@ -19866,6 +19866,7 @@
 		}, {
 			key: 'handleChange',
 			value: function handleChange(textInput) {
+				textInput = textInput.replace(/(<([^>]+)>)/ig, "");
 				this.setState({ textInput: textInput });
 				if (this.props.onChange) {
 					this.props.onChange(textInput);
