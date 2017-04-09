@@ -19898,8 +19898,8 @@
 	var MarkdownPreview = function MarkdownPreview(_ref) {
 		var inputText = _ref.inputText;
 
-
-		//console.log(inputText);
+		inputText = inputText.replace(/(<([^>]+)>)/ig, "");
+		console.log(inputText);
 
 		var marked = __webpack_require__(162);
 
