@@ -2,7 +2,7 @@ import React from 'react';
 
 const MarkdownPreview = ({inputText}) => {
 		inputText = inputText.replace(/(<([^>]+)>)/ig,"");
-		//console.log(inputText);
+		console.log(inputText);
 
 		let marked = require('marked');
 
